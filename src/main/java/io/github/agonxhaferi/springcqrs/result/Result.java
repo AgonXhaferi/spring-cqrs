@@ -1,20 +1,6 @@
 package io.github.agonxhaferi.springcqrs.result;
 
-import lombok.Getter;
-
-public class Result<T, E> {
-
-    private final T value;
-    @Getter
-    private final E error;
-    @Getter
-    private final boolean isSuccess;
-
-    private Result(T value, E error, boolean isSuccess) {
-        this.value = value;
-        this.error = error;
-        this.isSuccess = isSuccess;
-    }
+public record Result<T, E>(T value, E error, boolean isSuccess) {
 
     public static <T, E> Result<T, E> ok(T value) {
         return new Result<>(value, null, true);
