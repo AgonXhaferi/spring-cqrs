@@ -6,7 +6,7 @@
 
     <groupId>io.github.agonxhaferi</groupId>
     <artifactId>spring-cqrs</artifactId>
-    <version>1.0.1</version> <packaging>jar</packaging>
+    <version>2.0.1</version> <packaging>jar</packaging>
 
     <name>spring-cqrs</name>
     <description>A lightweight port of the NestJS CQRS architecture patterns to Spring Boot.</description>

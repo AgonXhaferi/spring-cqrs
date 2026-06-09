@@ -10,6 +10,14 @@ public record Result<T, E>(T value, E error, boolean isSuccess) {
         return new Result<>(null, error, false);
     }
 
+    public T getValue() {
+        return value;
+    }
+
+    public E getError() {
+        return error;
+    }
+
     public boolean isFailure() {
         return !isSuccess;
     }
